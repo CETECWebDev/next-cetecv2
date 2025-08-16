@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* تعریف فونت ایران یکان */
+@font-face {
+  font-family: 'IranYekan';
+  src: url('/fonts/iranyekanwebregular.e31c09af.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* حالت روشن */
+  --bg-navbar: #ffffff;
+  --text-navbar: #1a202c; /* text-gray-900 */
+  --hover-text-navbar: #2563eb; /* blue-600 */
+  --bg-dropdown: #f9fafb; /* gray-50 */
+  --text-dropdown: #374151; /* gray-700 */
+  --shadow-dropdown: rgba(156, 163, 175, 0.3); /* shadow-gray-300 */
+  --hover-bg-dropdown: #e5e7eb; /* gray-200 */
+  --border-support-btn: #2563eb;
+  --text-support-btn: #2563eb;
+  --hover-bg-support-btn: #2563eb;
+  --hover-text-support-btn: #ffffff;
+  --bg-login-btn: #3b82f6;
+  --hover-bg-login-btn: #22c55e;
+  --text-login-btn: #ffffff;
+  --hover-text-login-btn: #000000;
+}
+
+.dark {
+  /* حالت تاریک */
+  --bg-navbar: #353b48; /* رنگ دلخواه نوبار در دارک مود */
+  --text-navbar: #ffffff;
+  --hover-text-navbar: #aab7b8;
+  --bg-dropdown: #1e272e; /* خاکستری تیره‌تر برای هماهنگی */
+  --text-dropdown: #ffffff;
+  --shadow-dropdown: rgba(0, 0, 0, 0.7);
+  --hover-bg-dropdown: #2f3640;
+  --border-support-btn: #3b82f6;
+  --text-support-btn: #3b82f6;
+  --hover-bg-support-btn: #3b82f6;
+  --hover-text-support-btn: #ffffff;
+  --bg-login-btn: #2563eb;
+  --hover-bg-login-btn: #64dd17;
+  --text-login-btn: #ffffff;
+  --hover-text-login-btn: #000000;
+}
+
+/* نوبار */
+.navbar {
+  background-color: var(--bg-navbar);
+  color: var(--text-navbar);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a,
+.navbar button {
+  color: var(--text-navbar);
+  transition: color 0.3s;
+}
+
+.navbar a:hover,
+.navbar button:hover {
+  color: var(--hover-text-navbar);
+}
+
+/* منوی دراپ‌داون */
+.dropdown-menu {
+  background-color: var(--bg-dropdown);
+  color: var(--text-dropdown);
+  box-shadow: 0 4px 8px var(--shadow-dropdown);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-menu a:hover {
+  background-color: var(--hover-bg-dropdown);
+}
+
+/* دکمه پشتیبانی */
+.support-btn {
+  border: 1.5px solid var(--border-support-btn);
+  color: var(--text-support-btn);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.support-btn:hover {
+  background-color: var(--hover-bg-support-btn);
+  color: var(--hover-text-support-btn);
+}
+
+/* دکمه ورود/ثبت‌نام */
+.login-btn {
+  background-color: var(--bg-login-btn);
+  color: var(--text-login-btn);
+  font-weight: 700;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: var(--hover-bg-login-btn);
+  color: var(--hover-text-login-btn);
+}
+
+/* تنظیم فونت کل پروژه */
+body {
+  font-family: 'IranYekan', sans-serif;
+}
+
+.bgsize {
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
