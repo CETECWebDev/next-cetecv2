@@ -47,7 +47,7 @@ const NavbarDesktopMenu = ({ openIndex, onMouseEnter, onMouseLeave }) => {
 
       <li>
         <Link
-          href="#"
+          href="/contact"
           className="relative px-1 py-2 text-[var(--text-navbar)] hover:text-[var(--hover-text-navbar)] transition-colors"
         >
           تماس با ما

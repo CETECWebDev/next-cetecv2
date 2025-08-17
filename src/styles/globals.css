@@ -14,12 +14,18 @@
 :root {
   /* حالت روشن */
   --bg-navbar: #ffffff;
-  --text-navbar: #1a202c; /* text-gray-900 */
-  --hover-text-navbar: #2563eb; /* blue-600 */
-  --bg-dropdown: #f9fafb; /* gray-50 */
-  --text-dropdown: #374151; /* gray-700 */
-  --shadow-dropdown: rgba(156, 163, 175, 0.3); /* shadow-gray-300 */
-  --hover-bg-dropdown: #e5e7eb; /* gray-200 */
+  --text-navbar: #1a202c;
+  /* text-gray-900 */
+  --hover-text-navbar: #2563eb;
+  /* blue-600 */
+  --bg-dropdown: #f9fafb;
+  /* gray-50 */
+  --text-dropdown: #374151;
+  /* gray-700 */
+  --shadow-dropdown: rgba(156, 163, 175, 0.3);
+  /* shadow-gray-300 */
+  --hover-bg-dropdown: #e5e7eb;
+  /* gray-200 */
   --border-support-btn: #2563eb;
   --text-support-btn: #2563eb;
   --hover-bg-support-btn: #2563eb;
@@ -32,10 +38,12 @@
 
 .dark {
   /* حالت تاریک */
-  --bg-navbar: #353b48; /* رنگ دلخواه نوبار در دارک مود */
+  --bg-navbar: #353b48;
+  /* رنگ دلخواه نوبار در دارک مود */
   --text-navbar: #ffffff;
   --hover-text-navbar: #aab7b8;
-  --bg-dropdown: #1e272e; /* خاکستری تیره‌تر برای هماهنگی */
+  --bg-dropdown: #1e272e;
+  /* خاکستری تیره‌تر برای هماهنگی */
   --text-dropdown: #ffffff;
   --shadow-dropdown: rgba(0, 0, 0, 0.7);
   --hover-bg-dropdown: #2f3640;
@@ -112,4 +120,75 @@ body {
 .bgsize {
   background-size: 100%;
   background-repeat: no-repeat;
+}
+
+.redCard::before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: -40px;
+  z-index: 10;
+  border-top: 40px solid transparent;
+  /* ارتفاع */
+  border-right: 40px solid rgb(0, 0, 129);
+}
+
+.redCard::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: -40px;
+  z-index: 10;
+  border-bottom: 40px solid transparent;
+  /* ارتفاع */
+  border-right: 40px solid rgb(0, 0, 129);
+}
+
+
+
+.cardborder {
+  box-sizing: border-box;
+  position: relative;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.cardborder::after,
+.cardborder::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  box-sizing: content-box;
+  background-image: conic-gradient(from var(--angle), red, transparent, transparent, transparent, red);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+
+.cardborder::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
+  }
 }
