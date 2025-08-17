@@ -21,7 +21,7 @@ function About() {
     >
       <div className="max-w-screen-xl mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-center gap-12" dir="rtl">
-          {/* متن */}
+         
           <div
             className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-justify"
             data-aos="fade-left"
