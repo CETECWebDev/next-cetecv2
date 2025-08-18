@@ -8,7 +8,7 @@ import InfoSection from '@/component/template/product/product1/InfoSection'
 function product1() {
   return (
     <>
-    <Navbar/>
+    <Navbar/> 
     <Product/>
     <Parts/>
     <Option/>
