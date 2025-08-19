@@ -27,7 +27,7 @@ export default function IranPlatformData() {
   return (
     <section className="py-12 bg-gradient-to-b from-[#f5f7fa] via-[#e0e0e0] to-[#cfd8dc] dark:from-[#0f2027] dark:via-[#203a43] dark:to-[#2c5364] transition-colors duration-500">
       <div className="container mx-auto px-4">
-        {/* عنوان بخش */}
+      
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white">
             انواع داده‌های ورودی به سامانه
@@ -37,7 +37,7 @@ export default function IranPlatformData() {
           </p>
         </div>
 
-        {/* کارت‌ها */}
+       
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {ServicesData.map((service, index) => (
             <div
@@ -54,7 +54,7 @@ export default function IranPlatformData() {
                 {service.title}
               </h3>
               <p className="text-gray-600 dark:text-gray-300 text-sm md:text-base line-clamp-3">
-                {/* توضیح کوتاه می‌تواند اینجا اضافه شود */}
+             
               </p>
             </div>
           ))}
