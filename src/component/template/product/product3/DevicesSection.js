@@ -23,13 +23,13 @@ export default function DevicesSection() {
   return (
     <section className="relative w-full py-20 font-peyda overflow-hidden bg-gradient-to-br from-[#f5f7fa] to-[#c3cfe2] dark:from-[#0f2027] dark:to-[#203a43]">
       <div className="container mx-auto px-6 md:px-20 relative z-10">
-        {/* عنوان */}
+      
         <h1 data-aos="fade-up" className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-4">
           انواع دستگاه‌ها و نودهای قابل تعریف
         </h1>
         <div className="h-1 w-[260px] bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-500 rounded mb-12" />
 
-        {/* لیست آیتم‌ها */}
+       
         <div className="space-y-6">
           {items.map((text, i) => (
             <div
@@ -43,7 +43,7 @@ export default function DevicesSection() {
               <GradientCheckIcon />
               <p className="text-gray-800 dark:text-gray-200 text-lg leading-relaxed">{text}</p>
 
-              {/* Gradient متحرک هنگام Hover */}
+             
               <div
                 className={`absolute -inset-1 rounded-3xl transition-all duration-700`}
                 style={{
@@ -60,7 +60,7 @@ export default function DevicesSection() {
         </div>
       </div>
 
-      {/* Floating Blur پشت آیتم‌ها */}
+   
       {items.map((_, i) => (
         <div
           key={i}
