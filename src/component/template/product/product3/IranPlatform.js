@@ -44,15 +44,15 @@ export default function IranPlatform() {
       <motion.div
         variants={floatVariants}
         animate="animate"
-        className="absolute -top-32 -left-32 w-[28rem] h-[28rem] bg-primary/10 dark:bg-primary/30 blur-[140px] rounded-full z-0"
+        className="absolute -top-32 -left-32 sm:-top-40 sm:-left-40 w-[28rem] sm:w-[22rem] h-[28rem] sm:h-[22rem] bg-primary/10 dark:bg-primary/30 blur-[140px] rounded-full z-0"
       />
       <motion.div
         variants={floatVariants}
         animate="animate"
-        className="absolute bottom-[-8rem] right-[-8rem] w-[26rem] h-[26rem] bg-blue-200/10 blur-[120px] rounded-full z-0"
+        className="absolute bottom-[-8rem] right-[-8rem] sm:bottom-[-6rem] sm:right-[-6rem] w-[26rem] sm:w-[20rem] h-[26rem] sm:h-[20rem] blur-[120px] rounded-full z-0"
       />
 
-      <div className="container mx-auto h-full px-6 md:px-20 flex flex-col md:flex-row items-center md:items-start justify-between gap-12 md:gap-24 relative z-10 py-12">
+      <div className="container mx-auto h-full px-6 md:px-20 flex flex-col md:flex-row items-center md:items-start justify-between gap-10 md:gap-24 relative z-10 py-12">
         
         {/* Text content */}
         <motion.div
@@ -67,14 +67,14 @@ export default function IranPlatform() {
             (CETEC) شرکت قطب دانش و فناوری های مدرن
           </p>
 
-          {/* Title with Gradient to match IRAN */}
-          <h1 className="text-4xl md:text-5xl font-extrabold py-5 px-3 leading-snug 
+          {/* Title with Gradient */}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold py-5 px-3 leading-snug 
             bg-gradient-to-r from-teal-400 via-cyan-400 to-purple-500 
             text-transparent bg-clip-text">
             پلتفرم و سامانهٔ پیشرفتهٔ ایران
           </h1>
 
-          {/* Text with subtle glow */}
+          {/* Text lines */}
           <motion.div className="space-y-2">
             {[
               "پلتفرمی جامع برای شناسایی، تشخیص، شمارش، احراز هویت، ردیابی، هدایت و مسیریابی هوشمند",
@@ -87,7 +87,7 @@ export default function IranPlatform() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                className="text-gray-600 dark:text-gray-200 leading-8 text-xl font-normal font-peyda text-justify"
+                className="text-gray-600 dark:text-gray-200 leading-7 sm:leading-8 text-lg sm:text-xl font-normal font-peyda text-justify"
               >
                 {line}
               </motion.p>
@@ -96,21 +96,21 @@ export default function IranPlatform() {
         </motion.div>
 
         {/* IRAN complete + letters */}
-        <div data-aos="fade-right" className="flex flex-col space-y-6 md:w-1/2 text-left" dir="ltr">
+        <div data-aos="fade-right" className="flex flex-col space-y-4 sm:space-y-6 md:w-1/2 text-left" dir="ltr">
           
-          {/* IRAN complete with blink + rotation, no Glow */}
+          {/* IRAN complete blink + rotation */}
           <motion.h2
-            className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-teal-400 via-cyan-400 to-purple-500 text-transparent bg-clip-text cursor-pointer transition-all duration-300"
+            className="text-4xl sm:text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-teal-400 via-cyan-400 to-purple-500 text-transparent bg-clip-text cursor-pointer transition-all duration-300"
             animate={{
-              rotate: [0, 5, -5, 0], // چرخش ملایم
-              opacity: [1, 0.7, 1],   // چشمک ملایم
+              rotate: [0, 5, -5, 0],
+              opacity: [1, 0.7, 1],
             }}
             transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
           >
             IRAN
           </motion.h2>
 
-          {/* Individual letters with micro-interaction */}
+          {/* Individual letters */}
           {["I", "R", "A", "N"].map((letter, idx) => (
             <motion.div
               key={idx}
@@ -121,10 +121,10 @@ export default function IranPlatform() {
               whileInView="visible"
               viewport={{ once: true }}
             >
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-cyan-400 to-purple-500 text-5xl md:text-6xl font-bold mr-1">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-cyan-400 to-purple-500 text-4xl sm:text-5xl md:text-6xl font-bold mr-1">
                 {letter}
               </span>
-              <span className="text-gray-900 dark:text-white font-bold text-2xl md:text-2xl capitalize">
+              <span className="text-gray-900 dark:text-white font-bold text-xl sm:text-2xl md:text-2xl capitalize">
                 {letter === "I" ? "dentification" :
                  letter === "R" ? "ecognition" :
                  letter === "A" ? "uthentication" :
