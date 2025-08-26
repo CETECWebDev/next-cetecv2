@@ -12,7 +12,6 @@ export default function FeaturesSection() {
   const cardBaseClasses =
     "bg-white/80 dark:bg-white/10 backdrop-blur-md p-6 sm:p-8 rounded-3xl text-lg text-right leading-8 shadow-xl font-medium hover:scale-105 transition-transform";
 
-  // اندازه ثابت کارت‌ها در دسکتاپ و ریسپانسیو
   const cardWidthClass = "w-full sm:w-72 md:w-72";
 
   return (
@@ -23,26 +22,26 @@ export default function FeaturesSection() {
       transition-colors duration-500"
     >
       <div className="container mx-auto flex flex-col items-center px-4">
-        <h1
-          className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-gray-800 dark:text-white mb-10 md:mb-12"
+        <h2
+          className="text-lg font-bold text-yellow-500 mb-8 text-center
+          text-xl sm:text-2xl md:text-3xl font-bold text-center text-gray-800 dark:text-white mb-10 md:mb-12"
           data-aos="fade-up"
         >
           ویژگی‌های نرم‌افزاری و سخت‌افزاری
-        </h1>
+        </h2>
 
         <div
           className="flex flex-col sm:flex-row gap-6 sm:gap-8 mb-6 md:mb-8 justify-center flex-wrap max-w-5xl w-full"
           data-aos="fade-up"
         >
           <div className={`${cardBaseClasses} ${cardWidthClass}`}>
-            شمارش دقیق افراد و خودروها...
-            بدون نیاز به نصب هیچگونه گیت یا محدود کردن مسیر تردد
-          </div>
-          <div className={`${cardBaseClasses} ${cardWidthClass}`}>
-            داده‌کاوی و هوش مصنوعی روی داده‌های برخط
-          </div>
-          <div className={`${cardBaseClasses} ${cardWidthClass}`}>
             قابلیت تشخیص چهره و جنسیت برای کاربردهای نظارتی و کنترل دسترسی
+          </div>
+          <div className={`${cardBaseClasses} ${cardWidthClass}`}>
+            دارای نرم افزار تحت وب مرکزی مدیریت و نظارت
+          </div>
+          <div className={`${cardBaseClasses} ${cardWidthClass}`}>
+            قابلیت ذخیره‌سازی داده‌ها در خود دستگاه در صورت عدم ارتباط با شبکه و ارسال داده‌ها به سرور پس از اتصال مجدد
           </div>
         </div>
 
@@ -51,7 +50,7 @@ export default function FeaturesSection() {
           data-aos="zoom-in"
         >
           <div className={`${cardBaseClasses} ${cardWidthClass} mb-6 md:mb-0`} data-aos="fade-right">
-            قابلیت ذخیره‌سازی داده‌ها در خود دستگاه در صورت عدم ارتباط با شبکه و ارسال آن‌ها به سرور پس از اتصال مجدد
+            شمارش دقیق افراد و خودروها... بدون نیاز به نصب هیچگونه گیت یا محدود کردن مسیر تردد
           </div>
 
           <div className="z-10 flex-shrink-0 w-full max-w-xs md:max-w-none md:w-auto">
@@ -66,7 +65,7 @@ export default function FeaturesSection() {
           </div>
 
           <div className={`${cardBaseClasses} ${cardWidthClass}`} data-aos="fade-left">
-            دارای نرم‌افزار تحت وب مرکزی مدیریت و نظارت
+            قابلیت افزودن تعداد بی‌شمار دستگاه به هر سامانه مرکزی
           </div>
         </div>
 
@@ -74,7 +73,7 @@ export default function FeaturesSection() {
           className={`${cardBaseClasses} ${cardWidthClass} max-w-5xl`}
           data-aos="fade-up"
         >
-          قابلیت افزودن تعداد بی‌شمار دستگاه به هر سامانه مرکزی
+          داده‌کاوی و هوش مصنوعی روی داده‌های برخط
         </div>
       </div>
     </section>

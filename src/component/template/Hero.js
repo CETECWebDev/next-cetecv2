@@ -30,13 +30,13 @@ const Hero = () => {
       <div className="relative z-20 flex items-start justify-center h-full px-4 sm:px-6 pt-32 md:pt-44">
         <div className="container mx-auto">
           <div className="text-center max-w-xl sm:max-w-2xl mx-auto px-4 md:px-0">
-            <h1 className="text-3xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-relaxed text-white">
+            <h1 className="text-3xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-6 text-white">
               <span className="bg-gradient-to-r from-[#7684ff98] via-[#2af598] to-[#00ffcc] text-transparent bg-clip-text">
                 قطب دانش
               </span>{" "}
               دروازه‌ای به دنیای دیجیتال و هوشمندسازی
             </h1>
-            <p className="mt-6 sm:mt-8 text-base sm:text-lg md:text-xl text-gray-200 leading-relaxed max-w-lg mx-auto">
+            <p className="mt-6 sm:mt-8 text-base sm:text-lg md:text-xl text-gray-200 leading-8 max-w-lg mx-auto">
               پلتفرمی جامع برای شناسایی، تشخیص، شمارش حرارتی، احراز هویت و اجرای تحلیل هوشمند داده‌ها به کمک هوش مصنوعی.
             </p>
             <Link

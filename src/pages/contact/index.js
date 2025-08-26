@@ -1,15 +1,15 @@
-import Footer from '@/component/module/Footer'
 import Navbar from '@/component/module/Navbar'
-import ContactPage from '@/component/template/contact/ContactPage'
+import Footer from '@/component/module/Footer'
+import ContactPage from '@/component/template/comtact/Contact.Page'
 
 
 function index() {
   return (
-    <>
-    <Navbar/>
-        <ContactPage/>
-        <Footer/>
-    </>
+<>
+<Navbar/>
+<ContactPage/>
+<Footer/>
+</>
   )
 }
 

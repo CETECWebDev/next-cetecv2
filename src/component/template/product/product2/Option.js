@@ -4,7 +4,6 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// آیکون‌ها از کتابخانه‌های پایدار
 import { RiCpuLine } from "react-icons/ri";
 import { FaRegEye } from "react-icons/fa";
 import { AiOutlineCloudServer, AiOutlineSetting, AiOutlineApi } from "react-icons/ai";
@@ -45,48 +44,64 @@ function Option() {
   ];
 
   const icons = [
-  <RiCpuLine className="w-16 h-16" />,
-  <FaRegEye className="w-16 h-16" />,
-  <AiOutlineCloudServer className="w-16 h-16" />,
-  <AiOutlineSetting className="w-16 h-16" />,
-  <AiOutlineApi className="w-16 h-16" />,
-];
-
+    <RiCpuLine className="w-16 h-16" />,
+    <FaRegEye className="w-16 h-16" />,
+    <AiOutlineCloudServer className="w-16 h-16" />,
+    <AiOutlineSetting className="w-16 h-16" />,
+    <AiOutlineApi className="w-16 h-16" />,
+  ];
 
   return (
     <section
-      className="py-16 px-6 bg-gradient-to-br from-[#f5f7fa] to-[#eaeaea] 
-      dark:from-[#0f2027] dark:via-[#203a43] dark:to-[#2c5364] 
-      transition-colors duration-500"
+      className="py-16 px-6 bg-gradient-to-br from-[#f5f7fa] to-[#eaeaea] dark:from-[#0f2027] dark:via-[#203a43] dark:to-[#2c5364] transition-colors duration-500"
       dir="rtl"
     >
       <div className="container mx-auto">
         <h1 className="text-2xl font-bold text-center text-gray-800 dark:text-white mb-12">
           قابلیت‌های سامانه جامع شمارش هوشمند افراد
         </h1>
-
-      
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center mb-8">
-          {data.slice(0, 3).map((item, index) => (
-            <OptionCard
-              key={item.id}
-              icon={icons[index]}
-              title={item.title}
-              text={item.text}
-              delay={index * 100}
-            />
+        
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center mb-6">
+          {data.slice(0, 2).map((item, index) => (
+            <div className="w-full max-w-sm">
+              <OptionCard
+                key={item.id}
+                icon={icons[index]}
+                title={item.title}
+                text={item.text}
+                delay={index * 100}
+              />
+            </div>
           ))}
         </div>
 
-                <div className="flex flex-wrap justify-center gap-6">
-          {data.slice(3).map((item, index) => (
-            <OptionCard
-              key={item.id}
-              icon={icons[index + 3]}
-              title={item.title}
-              text={item.text}
-              delay={(index + 3) * 100}
-            />
+       
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center mb-6">
+          {data.slice(2, 4).map((item, index) => (
+            <div className="w-full max-w-sm">
+              <OptionCard
+                key={item.id}
+                icon={icons[index + 2]}
+                title={item.title}
+                text={item.text}
+                delay={(index + 2) * 100}
+              />
+            </div>
+          ))}
+        </div>
+
+       
+        <div className="grid grid-cols-1 place-items-center">
+          {data.slice(4).map((item, index) => (
+            <div className="w-full max-w-sm">
+              <OptionCard
+                key={item.id}
+                icon={icons[index + 4]}
+                title={item.title}
+                text={item.text}
+                delay={(index + 4) * 100}
+              />
+            </div>
           ))}
         </div>
       </div>

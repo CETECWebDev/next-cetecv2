@@ -14,7 +14,7 @@ export const menuItems = [
         href: "/product/product2", // فایل: product2.js
       },
       {
-        title: "پلتفرم سامانه پیشرفته ایران",
+        title: "سامانه نرم‌افزاری مدیریت زنجیره تولید",
         desc: "مدیریت هوشمند فرآیندهای تولید",
         href: "/product/product3", // فایل: product3.js
       },

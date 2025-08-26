@@ -5,17 +5,15 @@ import Footer from '@/component/module/Footer'
 import ProductSlider from '@/component/template/product/product2/Parts'
 import FeaturesSection from '@/component/template/product/product2/FeaturesSection'
 
-
 function product1() {
   return (
     <>
-    <Navbar/>
-    <Product/>
-    <ProductSlider/>
-    <Option/>
-    <FeaturesSection/>
-    <Footer/>
-    
+      <Navbar />
+      <Product />
+      <ProductSlider />
+      <Option />
+      <FeaturesSection />
+      <Footer />
     </>
   )
 }

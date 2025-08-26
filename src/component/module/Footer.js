@@ -16,7 +16,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="relative overflow-x-hidden bg-gradient-to-r from-black via-gray-900 to-gray-800 backdrop-blur-md border-t border-gray-700 py-14 transition-colors duration-500 dark:bg-gradient-to-r dark:from-gray-800 dark:via-gray-700 dark:to-gray-600 dark:border-gray-300">
+    <footer className="relative over-flow-hidden bg-gradient-to-r from-black via-gray-900 to-gray-800 backdrop-blur-md border-t border-gray-700 py-14 transition-colors duration-500 dark:bg-gradient-to-r dark:from-gray-800 dark:via-gray-700 dark:to-gray-600 dark:border-gray-300">
       <div className="max-w-[90rem] mx-auto px-4 text-white dark:text-gray-200 w-full">
         <NavbarLogo/>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-right font-semibold py-10">

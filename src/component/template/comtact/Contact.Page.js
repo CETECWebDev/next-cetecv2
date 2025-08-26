@@ -25,6 +25,7 @@ export default function ContactPage() {
 
   <div className="absolute inset-0 bg-blue-800/50 rounded-tr-xl rounded-br-xl z-0"></div>
 
+  {/* محتوا */}
   <div className="relative z-10">
     <h2 className="text-xl font-bold mb-4">سایر راه‌های ارتباطی</h2>
 
@@ -47,7 +48,7 @@ export default function ContactPage() {
       </li>
     </ul>
 
-   
+    {/* نقشه */}
     <div className="mt-8 rounded-lg overflow-hidden h-48 bg-white">
       <iframe
         title="map"

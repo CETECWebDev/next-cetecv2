@@ -47,7 +47,7 @@ function Services() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-20 max-w-[400px] mx-auto">
           <h1 className="text-4xl md:text-3xl font-bold text-gray-700 dark:text-white py-5">
-            حوزه های تخصصی
+            حوزه های فعالیت
           </h1>
         </div>
 

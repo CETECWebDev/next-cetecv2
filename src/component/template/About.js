@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Lottie from "lottie-react";
-import aboutAnimation from "@/component/common/assets/animations/aboutAnimation.json"; // مسیر فایل انیمیشن
+import aboutAnimation from "@/component/common/assets/animations/aboutAnimation.json";
 
 function About() {
   useEffect(() => {
@@ -13,30 +13,31 @@ function About() {
 
   return (
     <section
-      id="about"
-      className="py-12 flex items-center overflow-x-hidden
+    
+      className="py-12 overflow-x-hidden
                  bg-gradient-to-b from-[#eaeaea] via-[#f5f5f5] to-white 
                  dark:from-[#0f2027] dark:via-[#203a43] dark:to-[#2c5364] 
                  transition-colors duration-500"
     >
-      <div className="max-w-screen-xl mx-auto px-4">
+     
+      <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-center gap-12" dir="rtl">
-         
+          {/* متن */}
           <div
             className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-justify"
             data-aos="fade-left"
             data-aos-duration="800"
           >
-            <h2 className="text-primary-title-light dark:text-primary-title-dark font-bold text-2xl md:text-3xl my-5 text-center md:text-right">
+            <h1 className="text-primary-title-light dark:text-primary-title-dark font-bold text-4xl md:text-3xl my-5 text-center md:text-right">
               درباره‌ی شرکت قطب دانش و فناوری‌های مدرن (CETEC)
-            </h2>
+            </h1>
 
-            <p className="text-gray-600 dark:text-gray-300 my-6 leading-[2.2] font-medium tracking-wide text-[15.5px] md:text-[16.5px]">
+            <p className="text-gray-600 dark:text-gray-300 my-6 leading-[2.2] font-medium tracking-wide text-2xl md:text-xl">
               شرکت قطب دانش و فناوری‌های مدرن ستاره پارس (CETEC - Center of Excellence in Technologies)،
               با تکیه بر تخصص، نوآوری و تعهد، از سال ۱۳۹۱ فعالیت رسمی خود را آغاز کرده است.
             </p>
 
-            <div className="w-full flex justify-center md:justify-center">
+            <div className="w-full flex justify-center md:justify-start">
               <button
                 className="my-4 px-8 py-3 text-sm sm:text-base md:text-lg
                            rounded-full
@@ -52,7 +53,7 @@ function About() {
             </div>
           </div>
 
-          {/* انیمیشن جای عکس */}
+       
           <div
             className="w-full md:w-1/2 flex justify-center md:justify-start"
             data-aos="fade-right"

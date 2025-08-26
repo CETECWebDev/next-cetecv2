@@ -13,15 +13,7 @@ function Technologies() {
   ];
 
   return (
-    <section
-      className="
-        py-20
-        bg-gradient-to-b
-        from-[#f0f4f8] via-[#cbd5e1] to-[#94a3b8]
-        dark:from-[#1e293b] dark:via-[#334155] dark:to-[#475569]
-        transition-colors duration-500
-      "
-    >
+    <section className="py-20 bg-gradient-to-b from-[#f0f4f8] via-[#cbd5e1] to-[#94a3b8] dark:from-[#1e293b] dark:via-[#334155] dark:to-[#475569] transition-colors duration-500">
       <div className="container mx-auto px-4">
         <h1 className="text-3xl sm:text-4xl font-bold text-center text-gray-800 dark:text-white mb-4">
           فناوری‌های مورد استفاده قطب دانش
@@ -31,7 +23,6 @@ function Technologies() {
         </p>
 
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          
           <div className="relative w-full h-[320px] rounded-xl overflow-hidden">
             <div className="absolute inset-0 z-0">
               <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/20 via-sky-500/10 to-purple-500/20 blur-2xl opacity-70" />
@@ -67,48 +58,38 @@ function Technologies() {
             </div>
           </div>
 
-        
           <div className="flex flex-col space-y-6">
-          
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="hidden lg:grid lg:grid-cols-3 gap-6">
               {techItems.slice(0, 3).map((item) => (
-                <div
-                  key={item.id}
-                  className="flex flex-col items-center justify-center text-center
-                    bg-white/30 dark:bg-white/5 backdrop-blur-md
-                    rounded-2xl p-6 border border-white/10 transition hover:scale-[1.02]"
-                >
-                  <Image
-                    src={item.icon}
-                    alt={item.title}
-                    width={48}
-                    height={48}
-                    className="mb-4 text-blue-700 dark:text-white"
-                  />
+                <div key={item.id} className="flex flex-col items-center justify-center text-center bg-white/30 dark:bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 transition hover:scale-[1.02]">
+                  <Image src={item.icon} alt={item.title} width={48} height={48} className="mb-4 text-blue-700 dark:text-white" />
                   <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">{item.title}</h3>
                 </div>
               ))}
             </div>
 
-          
-            <div className="flex flex-col sm:flex-row justify-center gap-6">
+            <div className="hidden lg:flex justify-center gap-6">
               {techItems.slice(3, 5).map((item) => (
-                <div
-                  key={item.id}
-                  className="flex flex-col items-center justify-center text-center
-                    bg-white/30 dark:bg-white/5 backdrop-blur-md
-                    rounded-2xl p-6 border border-white/10 transition hover:scale-[1.02]"
-                >
-                  <Image
-                    src={item.icon}
-                    alt={item.title}
-                    width={48}
-                    height={48}
-                    className="mb-4 text-blue-700 dark:text-white"
-                  />
+                <div key={item.id} className="flex flex-col items-center justify-center text-center bg-white/30 dark:bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 transition hover:scale-[1.02]">
+                  <Image src={item.icon} alt={item.title} width={48} height={48} className="mb-4 text-blue-700 dark:text-white" />
                   <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">{item.title}</h3>
                 </div>
               ))}
+            </div>
+
+            <div className="lg:hidden grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {techItems.slice(0, 4).map((item) => (
+                <div key={item.id} className="flex flex-col items-center justify-center text-center bg-white/30 dark:bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 transition hover:scale-[1.02]">
+                  <Image src={item.icon} alt={item.title} width={48} height={48} className="mb-4 text-blue-700 dark:text-white" />
+                  <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">{item.title}</h3>
+                </div>
+              ))}
+              <div className="sm:col-span-2">
+                <div className="flex flex-col items-center justify-center text-center bg-white/30 dark:bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 transition hover:scale-[1.02]">
+                  <Image src={techItems[4].icon} alt={techItems[4].title} width={48} height={48} className="mb-4 text-blue-700 dark:text-white" />
+                  <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">{techItems[4].title}</h3>
+                </div>
+              </div>
             </div>
           </div>
         </div>

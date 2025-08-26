@@ -1,8 +1,9 @@
 import Footer from '@/component/module/Footer'
 import Navbar from '@/component/module/Navbar'
 import About from '@/component/template/About'
+
 import Hero from '@/component/template/Hero'
-import ProductCard from '@/component/template/ProductCard'
+import Products from '@/component/template/Products'
 import Services from '@/component/template/Services'
 import TechSlider from '@/component/template/Slider'
 import Technologies from '@/component/template/Technologies'
@@ -16,7 +17,7 @@ function index() {
     <Hero/>
     <Services/>
     <About/>
-    <ProductCard/>
+    <Products/>
     <Technologies/>
     <TechSlider/>
     <Footer/>

@@ -38,7 +38,6 @@ const ServicesData = [
 function ProductPage() {
   return (
     <div className="overflow-x-hidden font-peyda">
-      {/* سکشن کارت‌های کاربرد */}
       <section className="py-20 bg-gradient-to-b from-[#f5f7fa] via-[#e0e0e0] to-[#ffffff] dark:from-[#0f2027] dark:via-[#203a43] dark:to-[#2c5364]">
         <div className="container mx-auto px-6 md:px-12">
           <div className="text-center mb-16 max-w-[500px] mx-auto">

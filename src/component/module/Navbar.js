@@ -57,7 +57,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`navbar rtl font-peyda sticky top-0 z-50 transition-all duration-500 border-b border-white/10 dark:border-white/10 ${
+        className={`navbar rtl font-medium sticky top-0 z-[999999999] transition-all duration-500 border-b border-white/10 dark:border-white/10 ${
           scrolled ? "shadow-md" : "shadow-none"
         }`}
         style={navbarStyle}
